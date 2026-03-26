@@ -1,11 +1,61 @@
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.paper {
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+}
 
-*/
+body {
+  background-color: #d7d0d0;
+  padding: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.titulo {
+  font-family: "Dosis", sans-serif;
+  font-weight: 100;
+  font-size: 4rem;  
+  text-align: center;
+  color: rgb(210, 173, 179); 
+  margin-top: 20px;   
+}
+
+.botonEliminar {
+    color: rgb(217, 182, 182);
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+
+li .botonEliminar{
+    visibility: hidden;
+  
+}
+
+li:hover .botonEliminar{
+    visibility: visible;
+  
+}
+
+.posicionItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
